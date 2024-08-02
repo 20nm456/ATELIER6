@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="arriere" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="750.0" minWidth="750.0" prefHeight="527.0" prefWidth="834.0" style="-fx-min-height: 85%; -fx-min-width: 85%;" stylesheets="@../../../../../bankApp/src/main/resources/org/example/bankapp/style.css" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.arobase.HelloController">
+   <children>
+      <Pane id="cadre" layoutX="-1.0" prefHeight="527.0" prefWidth="433.0" style="-fx-background-color: white;" stylesheets="@../../../../../bankApp/src/main/resources/org/example/bankapp/style.css">
+         <children>
+            <Label alignment="CENTER" layoutY="32.0" prefHeight="36.0" prefWidth="433.0" text="Login" textFill="#026183">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="121.0" prefHeight="27.0" prefWidth="433.0" text="User Name" textFill="#054e72">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField id="inputName" layoutX="93.0" layoutY="166.0" prefHeight="25.0" prefWidth="268.0" style="-fx-border-color: black; -fx-border-width: 0 0 2 0;" styleClass="text" stylesheets="@../../../../../bankApp/src/main/resources/org/example/bankapp/style.css" />
+            <Label alignment="CENTER" layoutY="210.0" prefHeight="27.0" prefWidth="433.0" text="PassWord" textFill="#054e72">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField id="inputPass" layoutX="91.0" layoutY="245.0" prefHeight="25.0" prefWidth="268.0" style="-fx-border-color: black; -fx-border-width: 0 0 2 0;" styleClass="text" stylesheets="@../../../../../bankApp/src/main/resources/org/example/bankapp/style.css" />
+            <Button layoutX="307.0" layoutY="355.0" mnemonicParsing="false" text="valider" textFill="#f4f5f5" />
+            <Label layoutX="94.0" layoutY="351.0" prefHeight="25.0" prefWidth="113.0" text="Forgot?" textFill="#054e72" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="arriere" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1146.0" style="-fx-background-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.arobase.HelloController">
+   <children>
+      <VBox fx:id="menu" layoutX="-1.0" prefHeight="688.0" prefWidth="267.0" style="-fx-background-color: #02637f;">
+         <children>
+            <Pane fx:id="compteUser" prefHeight="153.0" prefWidth="267.0" style="-fx-background-color: #077287;">
+               <children>
+                  <Label fx:id="identity" layoutX="4.0" layoutY="84.0" prefHeight="43.0" prefWidth="259.0" text="compte" textFill="#f8f5f5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="acceuil" prefHeight="250.0" prefWidth="267.0" style="-fx-background-color: #024261;">
+               <children>
+                  <Label fx:id="ac" layoutX="61.0" prefHeight="43.0" prefWidth="205.0" text="Acceuil" textFill="#0ddff2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tous" layoutX="61.0" layoutY="48.0" onMouseClicked="#afficher" prefHeight="36.0" prefWidth="205.0" text="Tous les comptes" textFill="#0ddff2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="courant" layoutX="61.0" layoutY="90.0" onMouseClicked="#courant" prefHeight="36.0" prefWidth="205.0" text="Comptes courants" textFill="#0ddff2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="epargne" layoutX="61.0" layoutY="136.0" onMouseClicked="#epargne" prefHeight="36.0" prefWidth="205.0" text="Comptes epargnes" textFill="#0ddff2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ajout" layoutX="61.0" layoutY="187.0" onMouseClicked="#ajouter" prefHeight="36.0" prefWidth="205.0" text="Ajouter un compte" textFill="#0ddff2">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="menuBar" prefHeight="281.0" prefWidth="267.0">
+               <children>
+                  <Label fx:id="modifier" layoutX="62.0" layoutY="18.0" onMouseClicked="#modifier" prefHeight="29.0" prefWidth="196.0" text="Modifier" textFill="#06e4e4" />
+                  <Label fx:id="supprimer" layoutX="64.0" layoutY="63.0" onMouseClicked="#suppimer" prefHeight="36.0" prefWidth="189.0" text="Supprimer" textFill="#08e0e8" />
+                  <Label fx:id="quit" layoutX="57.0" layoutY="231.0" onMouseClicked="#quitter" prefHeight="29.0" prefWidth="211.0" text="Quitter" textFill="#07f4f8" />
+                  <Label fx:id="transfert" layoutX="64.0" layoutY="105.0" onMouseClicked="#transferer" prefHeight="36.0" prefWidth="189.0" text="Transfert" textFill="#07f4f8" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane fx:id="appBar" layoutX="266.0" prefHeight="309.0" prefWidth="878.0" style="-fx-background-color: #0ddff2;">
+         <children>
+            <Label fx:id="title" layoutX="137.0" layoutY="28.0" prefHeight="43.0" prefWidth="259.0" text="ARO BANK is my Bank" textFill="#063663">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TableView fx:id="table" layoutX="417.0" layoutY="108.0" prefHeight="580.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="numCol" prefWidth="75.0" text="ID.COMPTE" />
+          <TableColumn fx:id="tituCol" prefWidth="189.0" text="TITULAIRE" />
+            <TableColumn fx:id="soldCol" prefWidth="133.0" text="SOLDE" />
+            <TableColumn fx:id="typCol" prefWidth="161.0" text="TYPE" />
+        </columns>
+      </TableView>
+      <Pane layoutY="659.0" prefHeight="29.0" prefWidth="1146.0" style="-fx-background-color: #024261;" />
+   </children>
+</Pane>

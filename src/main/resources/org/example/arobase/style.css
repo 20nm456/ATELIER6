@@ -1,0 +1,21 @@
+.button {
+    -fx-background-color: green;
+}
+
+#arriere {
+   -fx-background-color:#082137;
+ }
+ #cadre {
+    -fx-box-shadow: 1px 3px 8px;
+   -fx-background-color: rgba(255,255,255); /* Couleur de fond avec transparence */
+     -fx-padding: 10px; /* Espacement intérieur */
+   -fx-border-radius: 15px; /* Coins arrondis (optionnel) */
+ }
+.text {
+  -fx-border: none;
+  -fx-border-bottom: 2px solid #000; /* Bordure inférieure de 2px en noir */
+  -fx-padding: 5px;
+  -fx-outline: none; /* Supprime le contour par défaut lors de la sélection */
+}
+
+
